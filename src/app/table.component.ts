@@ -6,6 +6,7 @@ import {Component} from "@angular/core";
 
 export class TableComponent {
     dtOptions: any = {};
+    tablemy: any;
 
     ngOnInit(): void {
         this.dtOptions = {
@@ -19,6 +20,11 @@ export class TableComponent {
                 {"title": "Ставка", "data": "salary"}
             ]
         };
+        // this.tablemy = 'datatable [dtOptions]';
+    }
+
+    clicked() {
+        console.log('clicked');
     }
 
 }
