@@ -25,7 +25,6 @@ var TableComponent = (function () {
                 { "title": "Ставка", "data": "salary" }
             ]
         };
-        // this.tablemy = 'datatable [dtOptions]';
     };
     TableComponent.prototype.clicked = function () {
         console.log('clicked');
