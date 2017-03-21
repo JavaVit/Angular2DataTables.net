@@ -1,3 +1,6 @@
 <h1>My Table page</h1>
+<p class="text-danger">You clicked on: <strong>{{ message }}</strong></p>
+<br />
 <button (click)="clicked()">Load table</button>
-<table datatable [dtOptions]="dtOptions" class="row-border hover"></table>
+<button (click)="clicked2()">Load table2</button>
+<table *ngIf="dtOptions != undefined" datatable [dtOptions]="dtOptions" class="row-border hover"></table>
